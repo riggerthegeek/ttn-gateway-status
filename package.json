@@ -1,6 +1,6 @@
 {
   "name": "ttn-gateway-status",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "A monitor for The Things Network gateways",
   "main": "index.js",
   "bin": {

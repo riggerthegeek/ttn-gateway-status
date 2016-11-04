@@ -18,14 +18,12 @@ var async = require("async");
 /* Files */
 var getGatewayStatus = require("./lib/getGatewayStatus");
 var Notifications = require("./lib/notifications");
-var EmailNotification = require("./notifications/email");
 var SlackNotification = require("./notifications/slack");
 
 
 var config = {
     gateway: process.env.TTN_GATEWAY,
     notifications: {
-        email: process.env.TTN_NOTIFICATION_EMAIL,
         slack: process.env.TTN_NOTIFICATION_SLACK
     },
     store: process.env.TTN_STORE || path.join(os.tmpDir(), "ttn-gateway-status.json"),
@@ -51,9 +49,6 @@ console.log("--------------");
 /* Setup the notifications */
 var notifications = new Notifications();
 
-if (config.notifications.email) {
-    notifications.addSender(new EmailNotification(config.notifications.email));
-}
 if (config.notifications.slack) {
     notifications.addSender(new SlackNotification(config.notifications.slack));
 }

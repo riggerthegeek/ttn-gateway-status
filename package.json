@@ -8,6 +8,7 @@
   },
   "scripts": {
     "lint": "eslint .",
+    "postversion": "git push && git push --tags",
     "test": "npm run lint"
   },
   "repository": {

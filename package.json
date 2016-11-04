@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "description": "A monitor for The Things Network gateways",
   "main": "index.js",
+  "bin": {
+    "ttngs": "./bin/ttngs.js"
+  },
   "scripts": {
-    "serve": "nodemon --require dotenv/config ./",
-    "start": "node ./",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -25,13 +26,12 @@
     "url": "https://github.com/riggerthegeek/ttn-gateway-status/issues"
   },
   "homepage": "https://github.com/riggerthegeek/ttn-gateway-status#readme",
-  "devDependencies": {
-    "dotenv": "^2.0.0",
-    "nodemon": "^1.11.0"
-  },
   "dependencies": {
     "async": "^2.1.2",
     "lodash": "^4.16.6",
-    "request": "^2.78.0"
-  }
+    "request": "^2.78.0",
+    "yargs": "^6.3.0"
+  },
+  "devDependencies": {},
+  "preferGlobal": true
 }

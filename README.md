@@ -23,6 +23,9 @@ This will give you access to the `ttngs` executable with the following options:
   - **file**: JSON file that stores changes to the gateway status (defaults to a file in your tmp directory)
   - **t/timeout**: The time (in seconds) before the gateways are checked again (defaults to 60)
 
+You can also use environment variables if you prefer, prefixed with "TTN_" (`--gatways` would become `TTN_GATEWAYS`
+for example).
+
 An example run command would be:
 
     ttngs --gateways=MY_GATEWAY_EUI --slack=MY_SLACK_URL

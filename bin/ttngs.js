@@ -24,6 +24,7 @@ var ttn = require("../");
 
 var argv = yargs
     .usage(pkg.description)
+    .env("TTN")
     .option("g", {
         alias: "gateways",
         demand: true,

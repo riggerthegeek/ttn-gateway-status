@@ -1,0 +1,16 @@
+language: node_js
+node_js:
+- node
+- '0.10'
+matrix:
+  fast_finish: true
+sudo: false
+deploy:
+  provider: npm
+  email: simon@simonemms.com
+  api_key:
+    secure: c8bOjMtYee/XsTH34+ghVUu9vjwjHqQIBivDYFEbr5hHKJ35BDLtoN83bz78oOu940OH1/dW3kEwst1qD8UOYzZhp+YlmD7SAKLshlwS7260jWhc7rrWPR9lvjSwxUEwonK1ueRBp7UioMvRJ29YUYR8ZdJJ94vomiy+31hgnUelq0Qo9nyGffkOxX7nCR9eIrkO8gnlVZefQ4Nb3vVHsOiWX6OwG3fnycfzRRAIyLK5oN10eJbG+opApSY1mmoWsCj9VsdjZ90b8/XjD/rTpMsE8A3kIAo94+BwewX+cvQoqsMQS13xu/og7+wsiazyOki67E4TswEwfS5kKODRTLLdpiMiUWMRa5dcbU5dOOvUVtwWenWUEzncZyI62DlGCvyd10g7oP1qNWSIt/+2H7cP2elSvboeUZcKRAcg7JLWslOo6v25/5JGQ35RaKuttp6FpKxUNzSi/PnZulzut+f9A7cSXyIHKauMxr8zm+kZASIvR9WFZ3xgMnZMW2jknN6WLFO3xYYiFscHuuNCS8pzksmUZ/EHIWJfRQIDQmhPlFHCM5gr0mKt1UJN7wtddRaGS9wgPXH41aK/c7lnWF+VhcCSkAwbVRoEocxQETlMnKQeMTypB9inks67XHKd2r1Sa7It008pUkvl5eEyB5MW8n/CXLcFKtHVAKMy4kI=
+  on:
+    all_branches: true
+    tags: true
+    repo: riggerthegeek/ttn-gateway-status

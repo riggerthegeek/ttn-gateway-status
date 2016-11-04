@@ -95,8 +95,10 @@ function trigger () {
                 var storeGateway = store[gatewayId] || {};
 
                 /* Treat as previously working if not in there */
-                var storeUplink = storeGateway.uplink || true;
-                var storeDownlink = storeGateway.downlink || true;
+                var storeUplink = storeGateway.uplinkActive;
+                var storeDownlink = storeGateway.downlinkActive;
+                if (storeUplink === void 0) { storeUplink = true; }
+                if (storeDownlink === void 0) { storeDownlink = true; }
 
                 var downlinkChange = gateway.downlinkActive !== storeDownlink;
                 var uplinkChange = gateway.uplinkActive !== storeUplink;

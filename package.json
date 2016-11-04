@@ -1,0 +1,26 @@
+{
+  "name": "ttn-gateway-status",
+  "version": "1.0.0",
+  "description": "A monitor for The Things Network gateways",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/riggerthegeek/ttn-gateway-status.git"
+  },
+  "keywords": [
+    "iot",
+    "things",
+    "network",
+    "status",
+    "checker"
+  ],
+  "author": "Simon Emms <simon@simonemms.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/riggerthegeek/ttn-gateway-status/issues"
+  },
+  "homepage": "https://github.com/riggerthegeek/ttn-gateway-status#readme"
+}

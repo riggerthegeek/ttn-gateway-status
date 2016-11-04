@@ -27,7 +27,7 @@ module.exports = function (opts) {
             slack: opts.slack
         },
         store: opts.store,
-        timeout: Number(opts.timeout || 60) * 1000,
+        timeout: opts.timeout * 1000,
         url: "https://staging.thethingsnetwork.org/gatewaystatus"
     };
 

@@ -32,6 +32,7 @@ var argv = yargs
     })
     .option("t", {
         alias: "timeout",
+        default: 60,
         describe: "The time (in seconds) before the gateways are checked again",
         type: "number"
     })

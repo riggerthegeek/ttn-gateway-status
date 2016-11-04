@@ -39,7 +39,17 @@ You will only be notified of a change in the uplink or downlink status.
 Currently, [Slack](https://slack.com) is the only supported recipient. To set up your channel, please visit the
 [Incoming WebHooks](https://slack.com/apps/A0F7XDUAZ-incoming-webhooks) help page.
 
+# Docker
+
+You can always run this using the Docker implementation. The Docker version is the same as the npm version. The
+setup is identical to above, except that you must set your environment variables in your docker run.
+
+    docker run --rm -it -e TTN_GATEWAYS=MY_GATEWAY_EUI -e TTN_SLACK=MY_SLACK_URL riggerthegeek/ttn-gateway-status
+
+This Docker image is also in the hub at [riggerthegeek/ttn-gateway-status](https://hub.docker.com/r/riggerthegeek/ttn-gateway-status).
+
 # ToDo
 
  - Add email support
  - Increase unit tests
+ - Automate Docker deployment
